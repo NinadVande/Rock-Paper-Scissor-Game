@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Silkscreen;
+}
+u{
+    background-color: white;
+    background-blend-mode: difference;
+}
+#header{
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+}
+body{
+    text-align: center;
+     background: linear-gradient(to right, #263238, #00E5FF);
+    background: linear-gradient(270deg,#232728 ,#4a4e52, #232728 );
+    background-size: 800% 800%;
+    animation: gradientBG 5s ease infinite;
+}
+ @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+#choices{
+    height: 40vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#choice{
+    height: 30vmin;
+    width: 80vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.circle{
+    height: 25vmin;
+    width: 25vmin;
+    border-radius: 12.5vmin;
+    font-size: 12vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6ac8f;
+    border-style: double;
+    border-width: 1vmin;
+    transition: transform 0.5s;
+    animation: transform 1s ease infinite;
+    
+}
+.circle:hover{
+    background-color: rgba(35, 43, 43, 0.5);
+    border-color: azure;
+    transform:translate3d(0px, -10px, 0px);
+    cursor: pointer;
+}
+.score-board,.msg-container{
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;  
+}
+#msg,#user-score,#comp-score,#user,#comp{
+    display: inline;
+    background-color: #FFCC4D;
+    border-radius: 1vmin;
+}
+
+
